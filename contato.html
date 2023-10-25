@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato</title>
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Tilt+Prism&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <div class="caixa">
+                <h1><img class="logo" src="IMG/BarberBR_Logo_branca.png" alt="Logo"></h1>
+                <nav class="botao__cabecalho">
+                    <ul>
+                        <li class="btn__redirect"><a href="index.html">Home</a></li>
+                        <li class="btn__redirect"><a href="produtos.html">Produtos</a></li>
+                        <li class="btn__redirect"><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <fieldset>
+                <form>
+                    <label style="font-weight: bold;">Nome e Sobrenome <input class="input__padrao" type="text" id="nome" placeholder="digite seu nome e sobrenome" required></label>
+                    <label style="font-weight: bold;" for="telefone">Telefone</label>
+                    <input class="input__padrao" type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                    <label style="font-weight: bold;" for="mensagem">Mensagem</label>
+                    <textarea cols="50" rows="10" id="mensagem" placeholder="modelo do corte ou barba e informações que achar útil"></textarea>
+                    <legend style="font-weight: bold;">Como gostaria que entrassemos em contato?</legend>
+                    <label><input  type="radio" id="radio-telefone" name="contato"> Ligação</label>
+                    <label><input type="radio" id="radio-whatsapp" name="contato" checked> WhatsApp</label>
+                
+                </fieldset>
+                
+                <fieldset>
+                    <legend style="font-weight: bold;">Qual dia e horário deseja agendar?</legend>
+                    <select>
+                        <option>Segunda</option>
+                        <option>Terça</option>
+                        <option>Quarta</option>
+                        <option>Quinta</option>
+                        <option>Sexta</option>
+                        <option>Sábado</option>
+                    </select>
+                    
+                    <select>
+                        <option>8:00</option>
+                        <option>9:00</option>
+                        <option>10:00</option>
+                        <option>11:00</option>
+                        <option>12:00</option>
+                        <option>14:00</option>
+                        <option>15:00</option>
+                        <option>16:00</option>
+                        <option>17:00</option>
+                        <option>18:00</option>
+                    </select>
+                </fieldset>
+                <label>Gostaria de receber novidades da BarberBR?<input type="checkbox" checked></label>
+                <input class="bt__enviar" type="submit" value="Agendar">
+            </form>
+
+            <table>
+                <thead>
+                    <th colspan="5">Funcionamento</th>
+                </thead>
+                <thead>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Terça</td>
+                        <td>8:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Quinta</td>
+                        <td>8:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>8:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Feriado</td>
+                        <td>8:00 - 13:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <footer class="rodape">
+            <img class="rodape__img" src="IMG/BarberBR_Logo_branca.png" alt="Logo branca">
+            <p class="copyright"> &copy; Copyright BarberBR - 2023</p>
+        </footer>
+    </body>
+</html>
